@@ -9,7 +9,7 @@ public class insertionSort {
         // Read and parse JSON file
         JSONParser parser = new JSONParser();
         try {
-            Object obj = parser.parse(new FileReader("C:/Users/felix/Desktop/sortJava/javasort/src/main/java/sort/example/cupcake_test_10.json"));
+            Object obj = parser.parse(new FileReader("/Users/quengochy/Downloads/sortJava/javasort/src/main/java/sort/example/cupcake_test_10.json"));
             JSONArray cupcakes = (JSONArray) obj;
 
             // Print unsorted cupcakes
