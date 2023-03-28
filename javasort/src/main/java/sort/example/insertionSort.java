@@ -10,7 +10,7 @@ public class insertionSort {
         JSONParser parser = new JSONParser();
         try {
             Object obj = parser.parse(new FileReader("/Users/quengochy/Downloads/sortJava/javasort/src/main/java/sort/example/cupcake_test_10.json"));
-            JSONArray cupcakes = (JSONArray) obj
+            JSONArray cupcakes = (JSONArray) obj;
 
             // Print unsorted cupcakes
             System.out.println("Unsorted cupcakes:");
@@ -18,7 +18,7 @@ public class insertionSort {
             for (int i = 0; i < cupcakes.size(); i++) {
                 JSONObject cupcake = (JSONObject) cupcakes.get(i);
                 long id = (long) cupcake.get("id");
-                String name = (String) cupcake.get("name");
+                String name = (String) cupcake.get("name")
                 System.out.printf("%-10d%-20s\n", id, name);
             }
 
